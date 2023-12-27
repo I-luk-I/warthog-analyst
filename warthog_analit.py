@@ -1,5 +1,5 @@
 import requests
-url='http://188.234.5.83:3000'
+url='http://localhost:3000'
 height = requests.get(f"{url}/chain/head").json()['data']['height']
 
 miners = f'{url}/chain/block/'
