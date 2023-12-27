@@ -1,8 +1,6 @@
 import requests
 url='http://localhost:3000'
 height = requests.get(f"{url}/chain/head").json()['data']['height']
-
-miners = f'{url}/chain/block/'
           
 list_miners = {}
 
