@@ -10,6 +10,6 @@ for i in range (height-4000,height):
         list_miners[url_block_info['data']['body']['rewards'][0]['toAddress']] += 3
     else:
         list_miners[url_block_info['data']['body']['rewards'][0]['toAddress']] = 3
-with open ('values.txt','w') as file:
+with open ('data.txt','w') as file:
     file.write(str(list_miners.items()))
 
